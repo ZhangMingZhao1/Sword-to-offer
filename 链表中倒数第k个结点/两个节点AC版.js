@@ -20,7 +20,7 @@ function FindKthToTail(head, k)
 {
     if(head==null) return null;
     var i = head, j = head;
-    while(--k){
+    while(--k){//注意这里先减
         j = j.next;
         if(!j){
             return null;
